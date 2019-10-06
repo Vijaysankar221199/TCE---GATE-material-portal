@@ -1,0 +1,11 @@
+in views.py
+
+<!-- python
+def index(request):
+next = request.GET.get('next', '/admin')
+if request.method == "POST":
+    name = request.POST['name'] // name is the domain subject refered during the drop down action
+    // need to write the query to display the correct contents
+    //answer = Contents.objects.all()
+	return render(request, 'AdminViewContents.hmtl', {'ans': answer})
+-->
