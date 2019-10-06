@@ -71,7 +71,18 @@
 
       <div class="container-fluid">
         <h4 class="mt-4">View Contents</h4>
-          <button  id="view" onclick="location.href='StudentsViewContents.html' ">View</button>
+        <form action="/" method='POST'>
+          <select>
+              <option name = "domain" value="domain">DOMAIN</option>
+          <option name = "ce" value="ce">Chemical Engineering</option>
+          <option name = "csit" value="csit">Computer Science</option>
+          <option name = "civil" value="civi">Civil Engineering</option>
+          <option name = "eee" value="eee">Electical and Electronics Engineering</option>
+            <option name = "ece" value="ece">Electronics and Communication Engineering</option>
+            <option name = "mech" value="mech">Mechanical Engineering</option>
+        </select>
+          <button  name = "view" id="view"  type= "submit">View</button>
+    </form>
         </div>
 
 

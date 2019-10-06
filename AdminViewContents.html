@@ -1,1 +1,24 @@
-Contents
+
+<!-- python
+cur = con.cursor()
+cur.execute("SELECT * FROM dataset")
+data = cur.fetchall()
+render_template('template.html', data=data)
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contents</title>
+    </head>
+    <body>
+      {% for item in data %}
+      <tr>
+          <td>{{item[0]}}</td>
+          <td>{{item[1]}}</td>
+          ...
+      </tr>
+      {% endfor %}
+    </body>
+</html>

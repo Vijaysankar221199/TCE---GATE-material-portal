@@ -1,1 +1,39 @@
-view
+<!-- python
+def index(request):
+next = request.GET.get('next', '/admin')
+if request.method == "POST":
+    username = request.POST['username']
+    password = request.POST['password']
+
+    user = authenticate(username=username, password=password)
+
+    if user is not None:
+        if user.is_active:
+            login(request, user)
+            data = Students.objects.all()
+            return render_to_response("login/profile.html", {'data', data})
+        else:
+            HttpResponse("Inactive User.")
+    else:
+        print("User Not Found!")
+        return HttpResponseRedirect(settings.LOGIN_URL)
+
+return render(request, 'login/home', {'redirect_to':next})
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contents</title>
+    </head>
+    <body>
+      {% for item in data %}
+      <tr>
+          <td>{{item[0]}}</td>
+          <td>{{item[1]}}</td>
+          ...
+      </tr>
+      {% endfor %}
+    </body>
+</html>
