@@ -3,17 +3,18 @@
 	 color: #1C2C94;
    	 text-align:left;
    	 font-size: 23px;
+   	 font-style: italic;
 }
 
 #t {
 	 text-align: center;
 	 color: white;
-     text-shadow: 0 1px 2px #f1f1f2;
+    
      font-family: sans-serif;
      font-size: 45px;
      background: linear-gradient(to bottom,#1640a0 , #1d4fc3);
       padding: 40px;
-     box-shadow: 0 6px 15px rgba(0,0,255,0.7);
+     box-shadow: 0 6px 15px rgba(0,0,0,0.6);
   7 
     }      
      
@@ -31,10 +32,10 @@ body{
     }
   
 .box{  
-	    left:10%;
-	    padding: 50px;
+	    left: 8%;
+	    padding: 25px;
 	    position: relative;
-	    max-width: 80%;
+	    max-width: 85%;
 	    background: rgba(255,255,255,0.2);
         box-shadow: 0 6px 15px rgba(0,0,0,.5);
         box-sizing: border-box;
