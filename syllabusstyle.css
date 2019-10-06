@@ -1,0 +1,44 @@
+#sec{
+      font-family: sans-serif;  
+	 color: #98201C;
+   	 text-align:left;
+   	 font-size: 23px;
+}
+
+#t {
+	 text-align: center;
+	 color: #585958;
+     text-shadow: 0 2px 3px grey;
+     font-size: 40px;
+} 
+
+body{
+     width:100%;
+
+background-color: #E5F6E9;
+background-size: fixed;
+    }
+  
+.box{  
+	    left: 100px;
+	    padding: 50px;
+	    position: relative;
+	    max-width: 1000px;
+	    background: rgba(255,240,255,0.2);
+        box-shadow: 0 6px 15px rgba(0,0,0,.5);
+    }
+
+#s {
+	 color: #80488E; 
+	 text-align:center;
+}
+*{
+	 font-size: 20px;
+	 color: #312D2D;
+
+}    
+
+
+        
+
+   
