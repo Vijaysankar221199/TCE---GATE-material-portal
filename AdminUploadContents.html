@@ -9,20 +9,20 @@
 <h6>Allows multiple files</h6>
 <form id="myForm" method="post" enctype="multipart/form-data">
 
-      Files: <input type="file" id="files" name="files" multiple><br/>
+      Files: <input type="file" id="files" name="files" multiple required><br/>
 
       <div id="selectedFiles"></div>
 
 <br><br><br>
-  Select Domain : <select>
-      <option value="volvo">DOMAIN</option>
+  Select Domain : <select required>
+      <option value="">DOMAIN</option>
   <option value="ce">Chemical Engineering</option>
   <option value="csit">Computer Science</option>
   <option value="civi">Civil Engineering</option>
   <option value="eee">Electical and Electronics Engineering</option>
     <option value="ece">Electronics and Communication Engineering</option>
     <option value="mech">Mechanical Engineering</option>
-</select>
+</select >
 <br><br>
   <input type="submit">
 </form>
