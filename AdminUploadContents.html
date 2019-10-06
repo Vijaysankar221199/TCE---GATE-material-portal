@@ -4,13 +4,53 @@
 <body>
 
 
-  <h1>Select files</h1>
+  <h1>Select files to upload</h1>
 
-<h3>Allows multiple files</h3>
-<form action="">
-  Select files: <input type="file" name="myFile" multiple><br><br>
+<h6>Allows multiple files</h6>
+<form id="myForm" method="post" enctype="multipart/form-data">
+
+      Files: <input type="file" id="files" name="files" multiple><br/>
+
+      <div id="selectedFiles"></div>
+
+<br><br><br>
+  Select Domain : <select>
+      <option value="volvo">DOMAIN</option>
+  <option value="ce">Chemical Engineering</option>
+  <option value="csit">Computer Science</option>
+  <option value="civi">Civil Engineering</option>
+  <option value="eee">Electical and Electronics Engineering</option>
+    <option value="ece">Electronics and Communication Engineering</option>
+    <option value="mech">Mechanical Engineering</option>
+</select>
+<br><br>
   <input type="submit">
 </form>
+<script>
+	var selDiv = "";
 
+	document.addEventListener("DOMContentLoaded", init, false);
+
+	function init() {
+		document.querySelector('#files').addEventListener('change', handleFileSelect, false);
+		selDiv = document.querySelector("#selectedFiles");
+	}
+
+	function handleFileSelect(e) {
+
+		if(!e.target.files) return;
+
+		selDiv.innerHTML = "";
+
+		var files = e.target.files;
+		for(var i=0; i<files.length; i++) {
+			var f = files[i];
+
+			selDiv.innerHTML += f.name + "<br/>";
+
+		}
+
+	}
+	</script>
 </body>
 </html>
